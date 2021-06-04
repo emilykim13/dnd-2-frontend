@@ -1,7 +1,7 @@
 import React from "react"
 // import { Link } from "react-router-dom"
 import { useDispatch } from 'react-redux'
-import { handleLogin } from "../actions/LogActions"
+import { handleLogin } from "../Actions/LogActions"
 
 const LoginForm = (props) => {
     let dispatch = useDispatch()
@@ -10,7 +10,7 @@ const LoginForm = (props) => {
             <form onSubmit={async (e) => {
                 e.preventDefault()
                 handleLogin(e.target, props.history, dispatch)}}> 
-                <h1> Welcome to WhoRU! </h1>
+                <h1> Welcome to DND Rails </h1>
                 <h1>Please sign in: </h1>
                 <label>EMAIL</label>
                 <input required type="text"/>
@@ -25,4 +25,6 @@ const LoginForm = (props) => {
     )
 }
   export default LoginForm;
+
+
   

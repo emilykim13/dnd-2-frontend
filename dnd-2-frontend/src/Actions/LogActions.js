@@ -37,8 +37,8 @@ export const handleLogin = (logUser, history, dispatch) => {
 //     })
 // }
 
-// export const handleLogout = (history, dispatch) => {
-//     localStorage.clear()
-//     dispatch({type: "LOGOUT_USER"})
-//     history.push('/login')
-// }
+export const handleLogout = (history, dispatch) => {
+    localStorage.clear()
+    dispatch({type: "LOGOUT_USER"})
+    history.push('/login')
+}
